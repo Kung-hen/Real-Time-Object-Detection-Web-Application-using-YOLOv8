@@ -5,7 +5,7 @@
 ***1.In this project, we implemented two convolutional neural network architectures, namely VGG19 and ResNet50, for the task of image classification.***
 
 <div align = center>
-<img src="Figures/GUI.png">
+<img src="Images/homepage.png">
 </div>
 
 **1.Requirements and dependencies**
@@ -18,6 +18,8 @@
   * Torchsummary 1.5.1
   * Tensorboard  2.14.0
   * Pillow 10.1.0
+  * ultralytics==8.0.26
+  * opencv-python-headless==4.1.2.30
 
 **2.Usage:**
 
