@@ -1,8 +1,10 @@
-# VGG19 and ResNet50 for Classification Task
+# Web Application using YOLOv8 
 
 *Discription:*
 
-***1.In this project, we implemented two convolutional neural network architectures, namely VGG19 and ResNet50, for the task of image classification.***
+***1.In this project,we used the Flask framework to create a user-friendly web application. The application's primary function is to perform recognition tasks using YOLOv8, an advanced object detection model. Users can upload images and videos for analysis and use their device's camera for real-time object detection.***
+
+
 
 <div align = center>
 <img src="Images/homepage.png">
@@ -21,47 +23,41 @@
   * ultralytics==8.0.26
   * opencv-python-headless==4.1.2.30
 
+
 **2.Usage:**
 
 1. Downloads whole repository.
-2. Download the pre-train model.
-4. Run the `Main.py` and follow the steps.
+2. Change the path into Web.
+3. Run the `flaskapp.py`.
+4. copy the URL `http://127.0.0.1:5000` paste on your browser.
+5. Follow the Website userface.
 
-**3.Filepath:**   
+
+## 1.Detect the image
+
 
 <div align = center>
-<img src="Figures/path_folder.png">
+<img src="Images/1.jpg"><img src="Web/static/images/1.png">
 </div>
 
+## 2.Detect the video
 
-## 1.VGG19-MNIST
 
-1.Objective :
-  
-  * Practice handwriting numbers and dog/cat classifications.
-
-2.Predict the handwriting numbers :
-
-  * Load VGG19 with BN pre-train model with highest validation accuracy which trained at Repositories ([Train VGG19 and ResNet50](https://github.com/Kung-hen/Train-VGG19-and-ResNet50)).
-  * Draw a number on graffiti board using mouse.
-  * Click the button `3.Predict` to run inference on the image you drew.
-      * Show the predicted class label on the GUI.
-      * Show the probability distribution of model predictions using a histogram in a new window.
-  * Click the button `4.Reset` to clear the graffiti board.
+https://github.com/Kung-hen/Real-Time-Object-Detection-Web-Application-using-YOLOv8/assets/95673520/f269b3ee-0ab6-43ce-aadb-28767c01228c
 
 
 
-https://github.com/Kung-hen/MNIST-VGG19-and-Animal-ResNet50-Classifier/assets/95673520/92eeaa90-2d33-4d28-893c-ed37d4a7935f
+
+https://github.com/Kung-hen/Real-Time-Object-Detection-Web-Application-using-YOLOv8/assets/95673520/29d3d3c3-f7e9-407e-8037-05cf0c949365
 
 
-## 2.ResNet50 Cat/Dog
-
-1.Objective :
-  
-  * Learn how to train a ResNet50 model to classify images of cats and dogs using PyTorch.
-
-2. Predict the Cat/Dog :
+## 3.Real-time classification in webcam
 
 
-https://github.com/Kung-hen/MNIST-VGG19-and-Animal-ResNet50-Classifier/assets/95673520/8f2b3d6d-1985-4070-9593-1be4d6f6c6e4
+
+
+
+https://github.com/Kung-hen/Real-Time-Object-Detection-Web-Application-using-YOLOv8/assets/95673520/0017b982-b243-4c60-9c9e-c4f38fbe8dfd
+
+
 
