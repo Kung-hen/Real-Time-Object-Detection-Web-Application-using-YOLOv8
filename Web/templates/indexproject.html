@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ObjectDetection-YOLOv8</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header.feature-box.right {
+            background-color: black;
+            color: white;
+            height: 120px;
+            padding: 5px;
+            text-align: right;
+        }
+
+        header.feature-box.below {
+            height: 800px;
+            background-color: blue;
+            margin-top: -30px;
+            background-image: url("../static/images/1.png");
+            background-size: 100%;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        li {
+            display: inline-block;
+            background-color: gray;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        li:hover {
+            background-color: red;
+            margin: 10px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .details {
+            height: 80px;
+            margin: 40px;
+            padding: 0px;
+            font-size: 40px;
+            background-color: gray;
+            text-align: center;
+            color: black;
+        }
+
+
+        .features {
+            background: white;
+            color: gray;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+
+        }
+
+        .features figure {
+            /*background:pink;*/
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .features figure img {
+            border-radius: 10%;
+            width: 400px;
+        }
+
+        div.main {
+            display: flex;
+            margin: 40px;
+            letter-spacing: 1px;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Playfair Display";
+                letter-spacing: 5px;
+            }
+        }
+
+        .subpart2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .subpart2 figure img {
+            border-radius: 4%;
+            width: 800px;
+        }
+
+        .contactpage {
+            margin: 20px;
+        }
+
+        #textbox {
+            font-size: 18pt;
+            height: 42px;
+            width: 1000px;
+        }
+
+        #textboxes {
+            font-size: 18pt;
+            height: 42px;
+            width: 1000px;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="feature-box right">
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/FrontPage">Video</a></li>
+                <li><a href="/webcam">Webcam</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="feature-box below">
+    </header>
+
+
+    <section class="details">
+        <h1>Sample Results</h1>
+
+    </section>
+    <section class="features">
+        <figure>
+            <img src="../static/images/1.png" alt="YOLOv8 Results 1">
+            <figcaption>Image Results 1</figcaption>
+        </figure>
+        <figure>
+            <video src="../static/files/cat.mov" width="400" controls></video>
+            <figcaption>Webcam Results 2</figcaption>
+        </figure>
+        <figure>
+            <video src="../static/files/Titan.mov" width="400" controls></video>
+            <figcaption>Video Results 3</figcaption>
+        </figure>
+    </section>
+    <div class="main">
+        <div class="subpart1">
+            <h1>Object Detection using YOLOv8</h1>
+            <h2>Video Frame Rate (FPS)</h2>
+            <p>The FPS (Frames Per Second) represents the frequency at which consecutive frames are displayed in the
+                video. When utilizing GPU acceleration, the processing speed is optimized, resulting in a higher FPS.
+                Conversely, processing on CPU tends to yield a lower FPS due to its comparatively slower computational
+                capabilities.</p>
+            <h2>Resolution of Current Frame</h2>
+            <p>The resolution, or dimensions, of the current frame are determined, providing insight into the clarity
+                and detail of the image being processed. This information is crucial for understanding the quality of
+                the visual data being analyzed.</p>
+            <h2>Detections in Current Frame</h2>
+            <p>For each frame, the algorithm identifies and quantifies the total number of object detections present.
+                This analysis provides valuable data regarding the frequency and distribution of objects within the
+                video stream, facilitating further analysis and decision-making processes.</p>
+
+        </div>
+
+        <div class="subpart2">
+            <figure>
+                <img src="../static/images/1.png" alt="Image Missing">
+                <figcaption>Sample Results</figcaption>
+            </figure>
+        </div>
+    </div>
+
+</body>
+
+</html>
